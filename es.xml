@@ -262,7 +262,7 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="filebase.index.stats.detail"><![CDATA[<ul class="inlineList dotSeparated">
 <li>{plural value=$stats[authors] 1='1 autor' other='# autores'}</li>
 <li>{plural value=$stats[files] 1='1 archivo' other='# archivos'}</li>
-<li>{$stats[size]|filesize} Total File Size</li>
+<li>Tamaño total de archivos {$stats[size]|filesize}</li>
 <li>{plural value=$stats[downloads] 1='1 descarga' other='# descargas'}{if $stats[downloads] > 0} ({plural value=$stats[downloadsPerDay] 1='1 descarga' other='# descargas'} por día){/if}</li>
 <li>{plural value=$stats[comments] 1='1 comentario' other='# comentarios'}</li>
 </ul>]]></item>
@@ -410,7 +410,7 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="wcf.acp.option.filebase_file_types.externalURL"><![CDATA[Enlace externo]]></item>
 		<item name="wcf.acp.option.filebase_file_types.description"><![CDATA[Puedes seleccionar los tipos de archivo permitidos, debes seleccionar al menos un tipo.]]></item>
 		<item name="wcf.acp.option.filebase_file_empty_recycle_bin_cycle"><![CDATA[Vaciar papelera]]></item>
-		<item name="wcf.acp.option.filebase_file_empty_recycle_bin_cycle.description"><![CDATA[Los archivos y lsd versiones de archivos se eliminan de la papelera en los días siguientes. Utiliza 0 para desactivar.]]></item>
+		<item name="wcf.acp.option.filebase_file_empty_recycle_bin_cycle.description"><![CDATA[Los archivos y las versiones de archivos se eliminan de la papelera en los días siguientes. Utiliza 0 para desactivar.]]></item>
 		<item name="wcf.acp.option.filebase_enable_file_icon"><![CDATA[Icono de archivo]]></item>
 		<item name="wcf.acp.option.filebase_enable_file_icon.description"><![CDATA[Los usuarios pueden subir un icono que se utilizará para presentar el archivo.]]></item>
 		<item name="wcf.acp.option.filebase_file_types.noFile"><![CDATA[Sin archivo]]></item>
