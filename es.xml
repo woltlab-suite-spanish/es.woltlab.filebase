@@ -182,7 +182,7 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="filebase.file.confirmDelete"><![CDATA[¿Realmente quieres eliminar este archivo?]]></item>
 		<item name="filebase.file.version.confirmDelete"><![CDATA[¿Realmente quieres eliminar esta versión?]]></item>
 		<item name="filebase.file.version.deleted"><![CDATA[Esta versión ha sido eliminada {if $version->userID == $version->getLogEntry()->userID}por el propio autor{else}por <a href="{link controller='User' id=$version->getLogEntry()->userID title=$version->getLogEntry()->username}{/link}" class="userLink" data-object-id="{@$version->getLogEntry()->userID}">{$version->getLogEntry()->username}</a>{/if}{if $version->getLogEntry()->reason}: {$version->getLogEntry()->reason}{/if} ({@$version->getLogEntry()->time|time}).]]></item>
-		<item name="filebase.file.confirmTrash"><![CDATA[[¿Realmente quieres mover este archivo a la papelera?]]></item>
+		<item name="filebase.file.confirmTrash"><![CDATA[¿Realmente quieres mover este archivo a la papelera?]]></item>
 		<item name="filebase.file.confirmTrash.reason"><![CDATA[Motivo (opcional)]]></item>
 		<item name="filebase.file.version.confirmTrash"><![CDATA[¿Realmente quieres mover esta versión a la papelera?]]></item>
 		<item name="filebase.file.version.confirmTrash.reason"><![CDATA[Motivo (opcional)]]></item>
