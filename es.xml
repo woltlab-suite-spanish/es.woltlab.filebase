@@ -404,7 +404,7 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="wcf.acp.option.filebase_enable_custom_license"><![CDATA[Habilitar licencias personalizadas]]></item>
 		<item name="wcf.acp.option.filebase_enable_custom_license.description"><![CDATA[Los usuarios pueden proporcionar un acuerdo de licencia personalizado.]]></item>
 		<item name="wcf.acp.option.filebase_enable_license_confirmation"><![CDATA[Requerir a los usuarios la aceptación del acuerdo de licencia]]></item>
-		<item name="wcf.acp.option.filebase_enable_license_confirmation.description"><![CDATA[Los usuarios deben aceptar el acuerdo de licencia antes de descargar o adquirir productos.]]></item>
+		<item name="wcf.acp.option.filebase_enable_license_confirmation.description"><![CDATA[Los usuarios deben aceptar el acuerdo de licencia antes de descargar los archivos.]]></item>
 		<item name="wcf.acp.option.filebase_file_types"><![CDATA[Tipos de archivo permitidos]]></item>
 		<item name="wcf.acp.option.filebase_file_types.upload"><![CDATA[Archivo subido]]></item>
 		<item name="wcf.acp.option.filebase_file_types.externalURL"><![CDATA[Enlace externo]]></item>
