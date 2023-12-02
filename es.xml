@@ -54,7 +54,7 @@
 		<item name="filebase.acp.menu.link.filebase.file.option.add"><![CDATA[Añadir campo de opción]]></item>
 	</category>
 	<category name="filebase.category">
-		<item name="filebase.category.delete.sure"><![CDATA[¿Realmente quieres eliminar esta categoría? Todas las categorías secundarias de esta categoría se moverán a la categoría principal de esta categoría. Los archivos que sólo pertenezcan a esta categoría y las opciones de archivo que sólo estén disponibles para esta categoría serán eliminadas.]]></item>
+		<item name="filebase.category.delete.sure"><![CDATA[¿Realmente quieres eliminar esta categoría? Todas las categorías secundarias de esta categoría se moverán a la categoría principal. Los archivos que sólo pertenezcan a esta categoría y las opciones de archivo que sólo pertenezcan a esta categoría serán eliminadas.]]></item>
 		<item name="filebase.category.categories"><![CDATA[Categorías]]></item>
 	</category>
 	<category name="filebase.file">
