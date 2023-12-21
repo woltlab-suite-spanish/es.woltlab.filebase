@@ -200,7 +200,7 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="filebase.file.upload.error.quotaExceeded"><![CDATA[Has superado tu límite de almacenamiento y no puedes subir nuevos archivos.]]></item>
 		<item name="filebase.file.options"><![CDATA[Información adicional]]></item>
 		<item name="filebase.file.icon"><![CDATA[Icono]]></item>
-		<item name="filebase.file.icon.description"><![CDATA[El icono se mostrará junto al archivo. Las dimensiones del icono deben ser de al menos 144×144 píxeles.<br>Extensiones de archivo permitidas: jpg, jpeg, png, webp]]></item>
+		<item name="filebase.file.icon.description"><![CDATA[El icono se mostrará junto al archivo. Las dimensiones del icono deben ser de al menos 144 × 144 píxeles.<br>Extensiones de archivo permitidas: jpg, jpeg, png, webp]]></item>
 		<item name="filebase.file.icon.delete"><![CDATA[Eliminar icono]]></item>
 		<item name="filebase.file.icon.delete.confirmMessage"><![CDATA[¿Realmente quieres eliminar este icono?]]></item>
 		<item name="filebase.file.icon.error.invalidExtension"><![CDATA[La extensión del archivo no es válida.]]></item>
