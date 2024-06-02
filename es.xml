@@ -312,6 +312,7 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="wcf.acp.dataImport.data.com.woltlab.filebase.file.attachment"><![CDATA[Archivos adjuntos de la base de archivos]]></item>
 		<item name="wcf.acp.dataImport.data.com.woltlab.filebase.file.version.attachment"><![CDATA[Archivos adjuntos de versiones de la base de archivos]]></item>
 		<item name="wcf.acp.dataImport.data.com.woltlab.filebase.file.version.review"><![CDATA[Reseñas de versiones de la base de archivos]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.filebase.license"><![CDATA[Licencias de la base de archivos]]></item>
 	</category>
 	<category name="wcf.acp.group">
 		<item name="wcf.acp.group.option.category.user.filebase"><![CDATA[Base de archivos]]></item>
