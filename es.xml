@@ -307,8 +307,8 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="wcf.acp.dataImport.data.com.woltlab.filebase.file.version"><![CDATA[Versiones de la base de archivos]]></item>
 		<item name="wcf.acp.dataImport.data.com.woltlab.filebase.file.comment"><![CDATA[Comentarios de la base de archivos]]></item>
 		<item name="wcf.acp.dataImport.data.com.woltlab.filebase.file.comment.response"><![CDATA[Respuestas a comentarios de la base de archivos]]></item>
-		<item name="wcf.acp.dataImport.data.com.woltlab.filebase.file.like"><![CDATA[Me gusta de la base de archivos]]></item>
-		<item name="wcf.acp.dataImport.data.com.woltlab.filebase.file.version.like"><![CDATA[Me gusta de versiones de la base de archivos]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.filebase.file.like"><![CDATA[Reacciones de la base de archivos]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.filebase.file.version.like"><![CDATA[Reacciones de versiones de la base de archivos]]></item>
 		<item name="wcf.acp.dataImport.data.com.woltlab.filebase.file.attachment"><![CDATA[Archivos adjuntos de la base de archivos]]></item>
 		<item name="wcf.acp.dataImport.data.com.woltlab.filebase.file.version.attachment"><![CDATA[Archivos adjuntos de versiones de la base de archivos]]></item>
 		<item name="wcf.acp.dataImport.data.com.woltlab.filebase.file.version.review"><![CDATA[Reseñas de versiones de la base de archivos]]></item>
