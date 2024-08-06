@@ -227,7 +227,7 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="filebase.file.icon.fontAwesome"><![CDATA[Icono de FontAwesome]]></item>
 		<item name="filebase.file.noFile"><![CDATA[Sin archivo]]></item>
 		<item name="filebase.file.noFile.description"><![CDATA[Con esta opción, puedes, por ejemplo, proporcionar información a través de la descripción y los archivos adjuntos.]]></item>
-		<item name="filebase.file.category.moderation.info"><![CDATA[Los archivos recién cargados en esta categoría permanecerán inaccesibles para los demás hasta que sean aprobados por un moderador.]]></item>
+		<item name="filebase.file.category.moderation.info"><![CDATA[Los archivos recién subidos en esta categoría permanecerán inaccesibles para los demás hasta que sean aprobados por un moderador.]]></item>
 		<item name="filebase.file.download.loginInfo"><![CDATA[Por favor, inicia sesión]]></item>
 		<item name="filebase.file.notification.moderation.enable.notification.title"><![CDATA[Tu archivo ha sido aprobado]]></item>
 		<item name="filebase.file.notification.moderation.enable.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Un moderador{/if} ha aprobado tu archivo <strong>{$file->getTitle()}</strong>.]]></item>
