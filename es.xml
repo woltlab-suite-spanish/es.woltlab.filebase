@@ -25,7 +25,7 @@
 		<item name="filebase.acp.file.option.defaultValue.description"><![CDATA[Valor de opción por defecto sugerido en la primera edición.]]></item>
 		<item name="filebase.acp.file.option.typeData"><![CDATA[Propiedades]]></item>
 		<item name="filebase.acp.file.option.selectOptions"><![CDATA[Opciones]]></item>
-		<item name="filebase.acp.file.option.selectOptions.description"><![CDATA[Puedes utilizar opciones de selección en combinación con tipos de selección, pero tenga en cuenta que el uso de los dos puntos hará que el sistema utilice todo lo situado a la izquierda como identificador interno y sólo se mostrará al usuario la parte situada después de los dos puntos. Esto le permite cambiar el valor mostrado al usuario sin dañar las selecciones existentes, a menos que se cambie el propio identificador. Introduzca una opción de selección por línea.]]></item>
+		<item name="filebase.acp.file.option.selectOptions.description"><![CDATA[Puedes utilizar opciones de selección en combinación con tipos de selección, pero tenga en cuenta que el uso de los dos puntos hará que el sistema utilice todo lo situado a la izquierda como identificador interno y solo se mostrará al usuario la parte situada después de los dos puntos. Esto le permite cambiar el valor mostrado al usuario sin dañar las selecciones existentes, a menos que se cambie el propio identificador. Introduzca una opción de selección por línea.]]></item>
 		<item name="filebase.acp.file.option.validationPattern"><![CDATA[Expresión regular]]></item>
 		<item name="filebase.acp.file.option.validationPattern.description"><![CDATA[Puedes proporcionar una expresión regular para validar la entrada del usuario.]]></item>
 		<item name="filebase.acp.file.option.required"><![CDATA[Este campo es obligatorio]]></item>
@@ -37,7 +37,7 @@
 		<item name="filebase.acp.file.paymentLog"><![CDATA[Transacción]]></item>
 		<item name="filebase.acp.file.paymentLog.transactionDetails"><![CDATA[Detalles]]></item>
 		<item name="filebase.acp.file.option.categoryIDs"><![CDATA[Categorías]]></item>
-		<item name="filebase.acp.file.option.categoryIDs.description"><![CDATA[El campo de opción sólo está disponible para los ficheros de las categorías seleccionadas. Si no se selecciona ninguna categoría, el campo de opción está disponible en todas las categorías.]]></item>
+		<item name="filebase.acp.file.option.categoryIDs.description"><![CDATA[El campo de opción solo está disponible para los ficheros de las categorías seleccionadas. Si no se selecciona ninguna categoría, el campo de opción está disponible en todas las categorías.]]></item>
 	</category>
 	<category name="filebase.acp.license">
 		<item name="filebase.acp.license.list"><![CDATA[Licencias]]></item>
@@ -54,7 +54,7 @@
 		<item name="filebase.acp.menu.link.filebase.file.option.add"><![CDATA[Añadir campo de opción]]></item>
 	</category>
 	<category name="filebase.category">
-		<item name="filebase.category.delete.sure"><![CDATA[¿Realmente quieres eliminar esta categoría? Todas las categorías secundarias de esta categoría se moverán a la categoría principal. Los archivos que sólo pertenezcan a esta categoría y las opciones de archivo que sólo pertenezcan a esta categoría serán eliminadas.]]></item>
+		<item name="filebase.category.delete.sure"><![CDATA[¿Realmente quieres eliminar esta categoría? Todas las categorías secundarias de esta categoría se moverán a la categoría principal. Los archivos que solo pertenezcan a esta categoría y las opciones de archivo que solo pertenezcan a esta categoría serán eliminadas.]]></item>
 		<item name="filebase.category.categories"><![CDATA[Categorías]]></item>
 	</category>
 	<category name="filebase.file">
@@ -217,7 +217,7 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="filebase.file.category"><![CDATA[Categoría]]></item>
 		<item name="filebase.file.cumulativeLikes"><![CDATA[Reacciones]]></item>
 		<item name="filebase.file.random"><![CDATA[Random]]></item>
-		<item name="filebase.file.condition.isFeatured"><![CDATA[Sólo archivos destacados]]></item>
+		<item name="filebase.file.condition.isFeatured"><![CDATA[Solo archivos destacados]]></item>
 		<item name="filebase.file.version.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} {if $count == 1}ha reaccionado{else}han reaccionado{/if} {if $version->versionNumber}a la versión {$version->versionNumber}{else} a una versión{/if} de tu archivo <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
 		<item name="filebase.file.version.like.notification.message"><![CDATA[<strong>{$author}</strong> ha reaccionado {if $version->versionNumber}a la versión {$version->versionNumber}{else} a una versión{/if} de tu archivo <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
 		<item name="filebase.file.version.like.notification.title"><![CDATA[Reacción a una versión de tu archivo]]></item>
