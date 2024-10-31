@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="es" languagename="Español" countrycode="es">
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/6.0/language.xsd" languagecode="es">
 <import>
 	<category name="filebase.acp.file">
 		<item name="filebase.acp.file.option.list"><![CDATA[Campos de opción]]></item>
@@ -36,7 +36,6 @@
 		<item name="filebase.acp.file.paymentLog.logMessage"><![CDATA[Acción]]></item>
 		<item name="filebase.acp.file.paymentLog"><![CDATA[Transacción]]></item>
 		<item name="filebase.acp.file.paymentLog.transactionDetails"><![CDATA[Detalles]]></item>
-		<item name="filebase.acp.file.option.categoryIDs"><![CDATA[Categorías]]></item>
 		<item name="filebase.acp.file.option.categoryIDs.description"><![CDATA[El campo de opción solo está disponible para los ficheros de las categorías seleccionadas. Si no se selecciona ninguna categoría, el campo de opción está disponible en todas las categorías.]]></item>
 	</category>
 	<category name="filebase.acp.license">
@@ -55,7 +54,6 @@
 	</category>
 	<category name="filebase.category">
 		<item name="filebase.category.delete.sure"><![CDATA[¿Realmente quieres eliminar esta categoría? Todas las categorías secundarias de esta categoría se moverán a la categoría principal. Los archivos que solo pertenezcan a esta categoría y las opciones de archivo que solo pertenezcan a esta categoría serán eliminadas.]]></item>
-		<item name="filebase.category.categories"><![CDATA[Categorías]]></item>
 	</category>
 	<category name="filebase.file">
 		<item name="filebase.file.file"><![CDATA[Archivo]]></item>
@@ -89,12 +87,12 @@
 		<item name="filebase.file.moreUserFiles"><![CDATA[Más archivos de {$file->username}]]></item>
 		<item name="filebase.file.moreFiles.all"><![CDATA[Todos los archivos]]></item>
 		<item name="filebase.file.information"><![CDATA[Detalles del archivo]]></item>
-		<item name="filebase.file.recentActivity.file"><![CDATA[Ha añadido {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}el archivo {anchor object=$file class='filebaseFileLink'}.]]></item>
-		<item name="filebase.file.recentActivity.version"><![CDATA[Ha añadido {if $version->versionNumber}la versión {$version->versionNumber}{else}una nueva versión{/if} del archivo {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$version->getFile() class='filebaseFileLink'}.]]></item>
-		<item name="filebase.file.recentActivity.likedFile"><![CDATA[Ha reaccionado con <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> al archivo {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$file->getLink()}" class="filebaseFileLink" data-object-id="{@$file->fileID}">{$file->getTitle()}</a>.]]></item>
-		<item name="filebase.file.recentActivity.likedReview"><![CDATA[Ha reaccionado con <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> a la reseña <a href="{$review->getLink()}">{$review->getTitle()}</a> del archivo {if $review->getViewableFile()->hasLabels()}<ul class="labelList">{foreach from=$review->getViewableFile()->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$review->getViewableFile() class='filebaseFileLink'}.]]></item>
-		<item name="filebase.file.recentActivity.fileComment"><![CDATA[Ha comentado en el archivo {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$file->getLink()}#comments/comment{@$commentID}" class="filebaseFileLink" data-object-id="{@$file->fileID}">{$file->getTitle()}</a>.]]></item>
-		<item name="filebase.file.recentActivity.fileCommentResponse"><![CDATA[Ha respondido a un comentario de {user object=$commentAuthor} en el archivo {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$file->getLink()}#comments/comment{@$commentID}/response{@$responseID}" class="filebaseFileLink" data-object-id="{@$file->fileID}">{$file->getTitle()}</a>.]]></item>
+		<item name="filebase.file.recentActivity.file"><![CDATA[<strong>{$author}</strong> ha añadido {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{unsafe:$label->render()}</li>{/foreach}</ul> {/if}el archivo <strong>{$file->getTitle()}</strong>.]]></item>
+		<item name="filebase.file.recentActivity.version"><![CDATA[<strong>{$author}</strong> ha añadido {if $version->versionNumber}la versión {$version->versionNumber}{else}una nueva versión{/if} del archivo {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{unsafe:$label->render()}</li>{/foreach}</ul> {/if}<strong>{$file->getTitle()}</strong>.]]></item>
+		<item name="filebase.file.recentActivity.likedFile"><![CDATA[<strong>{$author}</strong> ha reaccionado con <span title="{$reactionType->getTitle()}" class="jsTooltip">{unsafe:$reactionType->renderIcon()}</span> al archivo {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{unsafe:$label->render()}</li>{/foreach}</ul> {/if}<strong>{$file->getTitle()}</strong>.]]></item>
+		<item name="filebase.file.recentActivity.likedReview"><![CDATA[<strong>{$author}</strong> ha reaccionado con <span title="{$reactionType->getTitle()}" class="jsTooltip">{unsafe:$reactionType->renderIcon()}</span> a la reseña <strong>{$review->getTitle()}</strong> del archivo {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{unsafe:$label->render()}</li>{/foreach}</ul> {/if}<strong>{$file->getTitle()}</strong>.]]></item>
+		<item name="filebase.file.recentActivity.fileComment"><![CDATA[<strong>{$author}</strong> ha comentado en el archivo {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{unsafe:$label->render()}</li>{/foreach}</ul> {/if}<strong>{$file->getTitle()}</strong>.]]></item>
+		<item name="filebase.file.recentActivity.fileCommentResponse"><![CDATA[<strong>{$author}</strong> ha respondido a un comentario de <strong>{$commentAuthor}</strong> en el archivo {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{unsafe:$label->render()}</li>{/foreach}</ul> {/if}<strong>{$file->getTitle()}</strong>.]]></item>
 		<item name="filebase.file.ipAddress"><![CDATA[Dirección IP]]></item>
 		<item name="filebase.file.version.add"><![CDATA[Añadir versión]]></item>
 		<item name="filebase.file.version.edit"><![CDATA[Editar versión]]></item>
@@ -152,7 +150,9 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="filebase.file.notification.mail.plaintext"><![CDATA[{@$author} ha añadido el archivo “{@$file->getTitle()}” [URL:{@$file->getLink()}]:]]></item>
 		<item name="filebase.file.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> ha añadido el archivo <a href="{$file->getLink()}">{$file->getTitle()}</a>:</p>]]></item>
 		<item name="filebase.file.version.notification.title"><![CDATA[Nueva versión de archivo]]></item>
+		<item name="filebase.file.version.notification.title.stacked"><![CDATA[{#$timesTriggered} nuevas versiones de archivo]]></item>
 		<item name="filebase.file.version.notification.message"><![CDATA[<strong>{$author}</strong> ha añadido {if $version->versionNumber}la versión {$version->versionNumber}{else}una nueva versión{/if} al archivo <strong>{$version->getFile()->getTitle()}</strong>.]]></item>
+		<item name="filebase.file.version.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} {if $count == 1}ha añadido{else}han añadido{/if} {#$timesTriggered} nuevas versiones al archivo <strong>{$version->getFile()->getTitle()}</strong>.]]></item>
 		<item name="filebase.file.version.notification.mail.plaintext"><![CDATA[{@$author} ha añadido {if $version->versionNumber}la versión “{@$version->versionNumber}”{else}una nueva versión{/if} al archivo “{@$file->getTitle()}” [URL:{@$file->getLink()}]:]]></item>
 		<item name="filebase.file.version.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> ha añadido {if $version->versionNumber}la versión “{$version->versionNumber}”{else}una nueva versión{/if} al archivo <a href="{$file->getLink()}">{$file->getTitle()}</a>:</p>]]></item>
 		<item name="filebase.file.comment.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Un invitado{/if} ha comentado en tu archivo <strong>{$file->getTitle()}</strong>.]]></item>
@@ -214,7 +214,6 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="filebase.file.editReason"><![CDATA[Motivo de edición (opcional)]]></item>
 		<item name="filebase.file.author"><![CDATA[Autor]]></item>
 		<item name="filebase.file.option.error.validationFailed"><![CDATA[El valor introducido no es válido.]]></item>
-		<item name="filebase.file.category"><![CDATA[Categoría]]></item>
 		<item name="filebase.file.cumulativeLikes"><![CDATA[Reacciones]]></item>
 		<item name="filebase.file.random"><![CDATA[Random]]></item>
 		<item name="filebase.file.condition.isFeatured"><![CDATA[Solo archivos destacados]]></item>
@@ -542,7 +541,7 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="filebase.file.review.edit"><![CDATA[Editar reseña]]></item>
 		<item name="filebase.file.review.more"><![CDATA[Más reseñas]]></item>
 		<item name="filebase.file.review.version.notUnique"><![CDATA[Ya has escrito una reseña sobre esta versión.]]></item>
-		<item name="filebase.file.review.recentActivity.title"><![CDATA[Ha añadido la reseña <a href="{$review->getLink()}">{$review->getTitle()}</a> al archivo {if $review->getViewableFile()->hasLabels()}<ul class="labelList">{foreach from=$review->getViewableFile()->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$review->getViewableFile() class='filebaseFileLink'}.]]></item>
+		<item name="filebase.file.review.recentActivity.title"><![CDATA[<strong>{$author}</strong> ha añadido la reseña <strong>{$review->getTitle()}</strong> al archivo {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{unsafe:$label->render()}</li>{/foreach}</ul> {/if}<strong>{$file->getTitle()}</strong>.]]></item>
 		<item name="filebase.file.review.notification.title"><![CDATA[Nueva resaña]]></item>
 		<item name="filebase.file.review.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Un invitado{/if} ha añadido la reseña <strong>{$review->getTitle()}</strong> a tu archivo <strong>{$review->getViewableFile()->getTitle()}</strong>.]]></item>
 		<item name="filebase.file.review.notification.mail.plaintext"><![CDATA[{if $event->getAuthor()->userID}{@$event->getAuthor()->username} [URL:{link controller='User' object=$event->getAuthor() isEmail=true}{/link}]{else}Un invitado{/if} ha añadido la reseña “{@$event->getUserNotificationObject()->getTitle()}” [URL:{link application='filebase' controller='File' object=$event->getUserNotificationObject()->getViewableFile() isEmail=true}#reviews{/link}] a tu archivo “{@$event->getUserNotificationObject()->getViewableFile()->getTitle()}”:]]></item>
