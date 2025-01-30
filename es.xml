@@ -111,9 +111,9 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="filebase.file.teaser.description"><![CDATA[Introduce una breve descripción de tu archivo, no debe superar los {#FILEBASE_MAX_TEASER_LENGTH} caracteres.]]></item>
 		<item name="filebase.file.website.description"><![CDATA[Opcional: Sitio web (URL) con más detalles sobre este archivo.]]></item>
 		<item name="filebase.file.message"><![CDATA[Descripción]]></item>
-		<item name="filebase.file.enableComments"><![CDATA[Habilitar comentarios]]></item>
+		<item name="filebase.file.enableComments"><![CDATA[Activar comentarios]]></item>
 		<item name="filebase.file.enableComments.description"><![CDATA[Permite a los usuarios comentar este archivo.]]></item>
-		<item name="filebase.file.enableReviews"><![CDATA[Habilitar reseñas]]></item>
+		<item name="filebase.file.enableReviews"><![CDATA[Activar reseñas]]></item>
 		<item name="filebase.file.enableReviews.description"><![CDATA[Permite a los usuarios crear reseñas en este archivo.]]></item>
 		<item name="filebase.file.watchedFiles"><![CDATA[Archivos suscritos]]></item>
 		<item name="filebase.file.watchedFiles.stopWatchingAll"><![CDATA[Desuscribir archivos]]></item>
@@ -396,12 +396,12 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="wcf.acp.option.filebase_dashboard_box_files"><![CDATA[Número de archivos]]></item>
 		<item name="wcf.acp.option.category.dashboard.sidebar.files"><![CDATA[Archivos]]></item>
 		<item name="wcf.acp.option.filebase_message_sidebar_enable_user_files"><![CDATA[Mostrar el número de archivos del autor]]></item>
-		<item name="wcf.acp.option.filebase_enable_version_number"><![CDATA[Habilitar números de versión de archivos]]></item>
+		<item name="wcf.acp.option.filebase_enable_version_number"><![CDATA[Activar números de versión de archivos]]></item>
 		<item name="wcf.acp.option.filebase_enable_version_number.description"><![CDATA[Los usuarios deben especificar el número de versión para cada archivo subido.]]></item>
-		<item name="wcf.acp.option.filebase_enable_multilingualism"><![CDATA[Habilitar multilingüismo]]></item>
-		<item name="wcf.acp.option.filebase_enable_license"><![CDATA[Habilitar licencias]]></item>
+		<item name="wcf.acp.option.filebase_enable_multilingualism"><![CDATA[Activar multilingüismo]]></item>
+		<item name="wcf.acp.option.filebase_enable_license"><![CDATA[Activar licencias]]></item>
 		<item name="wcf.acp.option.filebase_enable_license.description"><![CDATA[Los archivos deben estar asociados a un acuerdo de licencia. Los usuarios pueden elegir entre una <a href="{link application='filebase' controller='LicenseList'}{/link}">lista de licencias predefinidas</a>.]]></item>
-		<item name="wcf.acp.option.filebase_enable_custom_license"><![CDATA[Habilitar licencias personalizadas]]></item>
+		<item name="wcf.acp.option.filebase_enable_custom_license"><![CDATA[Activar licencias personalizadas]]></item>
 		<item name="wcf.acp.option.filebase_enable_custom_license.description"><![CDATA[Los usuarios pueden proporcionar un acuerdo de licencia personalizado.]]></item>
 		<item name="wcf.acp.option.filebase_enable_license_confirmation"><![CDATA[Requerir a los usuarios la aceptación del acuerdo de licencia]]></item>
 		<item name="wcf.acp.option.filebase_enable_license_confirmation.description"><![CDATA[Los usuarios deben aceptar el acuerdo de licencia antes de descargar los archivos.]]></item>
@@ -415,7 +415,7 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="wcf.acp.option.filebase_enable_file_icon.description"><![CDATA[Los usuarios pueden subir un icono que se utilizará para presentar el archivo.]]></item>
 		<item name="wcf.acp.option.filebase_file_types.noFile"><![CDATA[Sin archivo]]></item>
 		<item name="wcf.acp.option.filebase_enable_review"><![CDATA[Reseñas]]></item>
-		<item name="wcf.acp.option.filebase_enable_moderation_notification"><![CDATA[Habilitar notificación de moderación]]></item>
+		<item name="wcf.acp.option.filebase_enable_moderation_notification"><![CDATA[Activar notificación de moderación]]></item>
 		<item name="wcf.acp.option.filebase_moderation_notification_show_moderator"><![CDATA[Mostrar moderador para notificaciones]]></item>
 	</category>
 	<category name="wcf.acp.pip">
