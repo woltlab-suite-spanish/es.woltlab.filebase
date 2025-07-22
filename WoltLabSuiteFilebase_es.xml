@@ -410,7 +410,7 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="wcf.acp.option.filebase_file_types.externalURL"><![CDATA[Enlace externo]]></item>
 		<item name="wcf.acp.option.filebase_file_types.description"><![CDATA[Puedes seleccionar los tipos de archivo permitidos, debes seleccionar al menos un tipo.]]></item>
 		<item name="wcf.acp.option.filebase_file_empty_recycle_bin_cycle"><![CDATA[Vaciar papelera]]></item>
-		<item name="wcf.acp.option.filebase_file_empty_recycle_bin_cycle.description"><![CDATA[Los archivos y las versiones de archivos se eliminan de la papelera en los días siguientes. Utiliza 0 para desactivar.]]></item>
+		<item name="wcf.acp.option.filebase_file_empty_recycle_bin_cycle.description"><![CDATA[Los archivos y las versiones de archivos se eliminan de la papelera después de los días indicados. Utiliza 0 para desactivar.]]></item>
 		<item name="wcf.acp.option.filebase_enable_file_icon"><![CDATA[Icono de archivo]]></item>
 		<item name="wcf.acp.option.filebase_enable_file_icon.description"><![CDATA[Los usuarios pueden subir un icono que se utilizará para presentar el archivo.]]></item>
 		<item name="wcf.acp.option.filebase_file_types.noFile"><![CDATA[Sin archivo]]></item>
