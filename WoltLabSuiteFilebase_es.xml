@@ -126,7 +126,7 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="filebase.file.searchFiles"><![CDATA[Buscar archivos]]></item>
 		<item name="filebase.file.version.description"><![CDATA[Descripción]]></item>
 		<item name="filebase.file.authors"><![CDATA[Autores adicionales]]></item>
-		<item name="filebase.file.authors.description"><![CDATA[Opcional: Puedes añadir usuarios adicionales que pueden editar este archivo y añadir nuevas versiones. Separa multiples usuarios con una coma.]]></item>
+		<item name="filebase.file.authors.description"><![CDATA[Opcional: Puedes añadir usuarios adicionales que pueden editar este archivo y añadir nuevas versiones. Separa múltiples usuarios con una coma.]]></item>
 		<item name="filebase.file.authors.error.notFound"><![CDATA[El nombre de usuario “{$errorData[username]}” no existe.]]></item>
 		<item name="filebase.file.edit.assignLabel"><![CDATA[Asignar etiqueta]]></item>
 		<item name="filebase.file.edit.delete"><![CDATA[Eliminar]]></item>
