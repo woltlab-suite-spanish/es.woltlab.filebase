@@ -25,7 +25,7 @@
 		<item name="filebase.acp.file.option.defaultValue.description"><![CDATA[Valor de opción por defecto sugerido en la primera edición.]]></item>
 		<item name="filebase.acp.file.option.typeData"><![CDATA[Propiedades]]></item>
 		<item name="filebase.acp.file.option.selectOptions"><![CDATA[Opciones]]></item>
-		<item name="filebase.acp.file.option.selectOptions.description"><![CDATA[Puedes utilizar opciones de selección en combinación con tipos de selección, pero tenga en cuenta que el uso de los dos puntos hará que el sistema utilice todo lo situado a la izquierda como identificador interno y solo se mostrará al usuario la parte situada después de los dos puntos. Esto le permite cambiar el valor mostrado al usuario sin dañar las selecciones existentes, a menos que se cambie el propio identificador. Introduzca una opción de selección por línea.]]></item>
+		<item name="filebase.acp.file.option.selectOptions.description"><![CDATA[Puedes utilizar opciones de selección en combinación con tipos de selección, pero ten en cuenta que el uso de los dos puntos hará que el sistema utilice todo lo situado a la izquierda como identificador interno y solo se mostrará al usuario la parte situada después de los dos puntos. Esto te permite cambiar el valor mostrado al usuario sin dañar las selecciones existentes, a menos que se cambie el propio identificador. Introduce una opción de selección por línea.]]></item>
 		<item name="filebase.acp.file.option.validationPattern"><![CDATA[Expresión regular]]></item>
 		<item name="filebase.acp.file.option.validationPattern.description"><![CDATA[Puedes proporcionar una expresión regular para validar la entrada del usuario.]]></item>
 		<item name="filebase.acp.file.option.required"><![CDATA[Este campo es obligatorio]]></item>
