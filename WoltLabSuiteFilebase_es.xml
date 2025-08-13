@@ -25,7 +25,7 @@
 		<item name="filebase.acp.file.option.defaultValue.description"><![CDATA[Valor de opción por defecto sugerido en la primera edición.]]></item>
 		<item name="filebase.acp.file.option.typeData"><![CDATA[Propiedades]]></item>
 		<item name="filebase.acp.file.option.selectOptions"><![CDATA[Opciones]]></item>
-		<item name="filebase.acp.file.option.selectOptions.description"><![CDATA[Puedes utilizar opciones de selección en combinación con tipos de selección, pero ten en cuenta que el uso de los dos puntos hará que el sistema utilice todo lo situado a la izquierda como identificador interno y solo se mostrará al usuario la parte situada después de los dos puntos. Esto te permite cambiar el valor mostrado al usuario sin dañar las selecciones existentes, a menos que se cambie el propio identificador. Introduce una opción de selección por línea.]]></item>
+		<item name="filebase.acp.file.option.selectOptions.description"><![CDATA[Puedes usar opciones de selección en combinación con tipos de selección, pero ten en cuenta que el uso de los dos puntos hará que el sistema use todo lo situado a la izquierda como identificador interno y solo se mostrará al usuario la parte situada después de los dos puntos. Esto te permite cambiar el valor mostrado al usuario sin dañar las selecciones existentes, a menos que se cambie el propio identificador. Introduce una opción de selección por línea.]]></item>
 		<item name="filebase.acp.file.option.validationPattern"><![CDATA[Expresión regular]]></item>
 		<item name="filebase.acp.file.option.validationPattern.description"><![CDATA[Puedes proporcionar una expresión regular para validar la entrada del usuario.]]></item>
 		<item name="filebase.acp.file.option.required"><![CDATA[Este campo es obligatorio]]></item>
@@ -274,7 +274,7 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="filebase.license.licenseAgreement.confirm.missingConfirmation"><![CDATA[Debes aceptar el acuerdo de licencia.]]></item>
 		<item name="filebase.license.licenseAgreement.inputDescription"><![CDATA[Proporciona el acuerdo de licencia para este producto.{if FILEBASE_ENABLE_LICENSE_CONFIRMATION} Los usuarios deben aceptar este acuerdo para poder descargar el producto.{/if}]]></item>
 		<item name="filebase.license.licenseType"><![CDATA[Tipo de licencia]]></item>
-		<item name="filebase.license.licenseType.predefined"><![CDATA[Utilizar licencia predefinida]]></item>
+		<item name="filebase.license.licenseType.predefined"><![CDATA[Usar licencia predefinida]]></item>
 		<item name="filebase.license.licenseType.custom"><![CDATA[Proporcionar una licencia propia]]></item>
 		<item name="filebase.license.licenseType.url"><![CDATA[Proporcionar una URL de licencia propia]]></item>
 		<item name="filebase.license.licenseType.text"><![CDATA[Proporcionar un texto de licencia propio]]></item>
@@ -410,9 +410,9 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="wcf.acp.option.filebase_file_types.externalURL"><![CDATA[Enlace externo]]></item>
 		<item name="wcf.acp.option.filebase_file_types.description"><![CDATA[Puedes seleccionar los tipos de archivo permitidos, debes seleccionar al menos un tipo.]]></item>
 		<item name="wcf.acp.option.filebase_file_empty_recycle_bin_cycle"><![CDATA[Vaciar papelera]]></item>
-		<item name="wcf.acp.option.filebase_file_empty_recycle_bin_cycle.description"><![CDATA[Los archivos y las versiones de archivos se eliminan de la papelera después de los días indicados. Utiliza 0 para desactivar.]]></item>
+		<item name="wcf.acp.option.filebase_file_empty_recycle_bin_cycle.description"><![CDATA[Los archivos y las versiones de archivos se eliminan de la papelera después de los días indicados. Usa 0 para desactivar.]]></item>
 		<item name="wcf.acp.option.filebase_enable_file_icon"><![CDATA[Icono de archivo]]></item>
-		<item name="wcf.acp.option.filebase_enable_file_icon.description"><![CDATA[Los usuarios pueden subir un icono que se utilizará para presentar el archivo.]]></item>
+		<item name="wcf.acp.option.filebase_enable_file_icon.description"><![CDATA[Los usuarios pueden subir un icono que se usará para presentar el archivo.]]></item>
 		<item name="wcf.acp.option.filebase_file_types.noFile"><![CDATA[Sin archivo]]></item>
 		<item name="wcf.acp.option.filebase_enable_review"><![CDATA[Reseñas]]></item>
 		<item name="wcf.acp.option.filebase_enable_moderation_notification"><![CDATA[Activar notificación de moderación]]></item>
