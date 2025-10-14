@@ -194,7 +194,7 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="filebase.file.commentResponse"><![CDATA[Respuesta a comentario de archivo]]></item>
 		<item name="filebase.file.subscribed"><![CDATA[Archivo suscrito]]></item>
 		<item name="filebase.file.userFileCounter"><![CDATA[{#$activeAuthor->filebaseFiles} archivo{if $activeAuthor->filebaseFiles != 1}s{/if}]]></item>
-		<item name="filebase.file.downloadFromExternalURL"><![CDATA[(from external URL)]]></item>
+		<item name="filebase.file.downloadFromExternalURL"><![CDATA[(desde una URL externa)]]></item>
 		<item name="filebase.file.externalURL"><![CDATA[URL externa]]></item>
 		<item name="filebase.file.downloadURL.error.invalid"><![CDATA[El enlace introducido no es válido.]]></item>
 		<item name="filebase.file.upload.error.quotaExceeded"><![CDATA[Has superado tu límite de almacenamiento y no puedes subir nuevos archivos.]]></item>
