@@ -236,7 +236,7 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="filebase.file.notification.moderation.trash.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Un moderador{/if} ha movido tu archivo <strong>{$file->getTitle()}</strong> a la papalera{if !$userNotificationObject->getDecoratedObject()->reason|empty} por el motivo “{$userNotificationObject->getDecoratedObject()->__get('reason')|truncate:255:'…'}”{/if}.]]></item>
 		<item name="filebase.file.version.notification.moderation.enable.notification.title"><![CDATA[Una versión de tu archivo ha sido aprobada]]></item>
 		<item name="filebase.file.version.notification.moderation.enable.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Un moderador{/if} ha aprobado una versión de tu archivo <strong>{$version->getFile()->getTitle()}</strong>.]]></item>
-		<item name="filebase.file.version.notification.moderation.trash.notification.title"><![CDATA[Una versión de tu archivo ha sido movida a la papalera]]></item>
+		<item name="filebase.file.version.notification.moderation.trash.notification.title"><![CDATA[Una versión de tu archivo ha sido movida a la papelera]]></item>
 		<item name="filebase.file.version.notification.moderation.trash.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Un moderador{/if} ha movido una versión de tu archivo <strong>{$version->getFile()->getTitle()}</strong> a la papelera{if !$userNotificationObject->getDecoratedObject()->__get('reason')|empty} por el motivo “{$userNotificationObject->getDecoratedObject()->reason|truncate:255:'…'}”{/if}.]]></item>
 	</category>
 	<category name="filebase.file.log">
