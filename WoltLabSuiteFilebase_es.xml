@@ -16,7 +16,7 @@
 		<item name="filebase.acp.file.option.optionType.select"><![CDATA[Selección simple]]></item>
 		<item name="filebase.acp.file.option.optionType.text"><![CDATA[Texto corto]]></item>
 		<item name="filebase.acp.file.option.optionType.textarea"><![CDATA[Texto multilínea]]></item>
-		<item name="filebase.acp.file.option.optionType.message"><![CDATA[Texto multilínea (bbcode support)]]></item>
+		<item name="filebase.acp.file.option.optionType.message"><![CDATA[Texto multilínea (compatible con BBCode)]]></item>
 		<item name="filebase.acp.file.option.optionType.URL"><![CDATA[Enlace]]></item>
 		<item name="filebase.acp.file.option.add"><![CDATA[Añadir campo de opción]]></item>
 		<item name="filebase.acp.file.option.edit"><![CDATA[Editar campo de opción]]></item>
