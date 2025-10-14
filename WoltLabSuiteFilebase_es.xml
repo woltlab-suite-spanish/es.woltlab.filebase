@@ -215,7 +215,7 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="filebase.file.author"><![CDATA[Autor]]></item>
 		<item name="filebase.file.option.error.validationFailed"><![CDATA[El valor introducido no es válido.]]></item>
 		<item name="filebase.file.cumulativeLikes"><![CDATA[Reacciones]]></item>
-		<item name="filebase.file.random"><![CDATA[Random]]></item>
+		<item name="filebase.file.random"><![CDATA[Aleatorio]]></item>
 		<item name="filebase.file.condition.isFeatured"><![CDATA[Solo archivos destacados]]></item>
 		<item name="filebase.file.version.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} {if $count == 1}ha reaccionado{else}han reaccionado{/if} {if $version->versionNumber}a la versión {$version->versionNumber}{else} a una versión{/if} de tu archivo <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
 		<item name="filebase.file.version.like.notification.message"><![CDATA[<strong>{$author}</strong> ha reaccionado {if $version->versionNumber}a la versión {$version->versionNumber}{else} a una versión{/if} de tu archivo <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
