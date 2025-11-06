@@ -37,6 +37,7 @@
 		<item name="filebase.acp.file.paymentLog"><![CDATA[Transacción]]></item>
 		<item name="filebase.acp.file.paymentLog.transactionDetails"><![CDATA[Detalles]]></item>
 		<item name="filebase.acp.file.option.categoryIDs.description"><![CDATA[El campo de opción solo está disponible para los ficheros de las categorías seleccionadas. Si no se selecciona ninguna categoría, el campo de opción está disponible en todas las categorías.]]></item>
+		<item name="filebase.acp.file.option.isMultilingual"><![CDATA[Activar multilingüismo]]></item>
 	</category>
 	<category name="filebase.acp.license">
 		<item name="filebase.acp.license.list"><![CDATA[Licencias]]></item>
@@ -126,7 +127,7 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="filebase.file.searchFiles"><![CDATA[Buscar archivos]]></item>
 		<item name="filebase.file.version.description"><![CDATA[Descripción]]></item>
 		<item name="filebase.file.authors"><![CDATA[Autores adicionales]]></item>
-		<item name="filebase.file.authors.description"><![CDATA[Opcional: Puedes añadir usuarios adicionales que pueden editar este archivo y añadir nuevas versiones. Separa múltiples usuarios con una coma.]]></item>
+		<item name="filebase.file.authors.description"><![CDATA[Opcional: Puedes añadir usuarios adicionales que pueden editar este archivo y añadir nuevas versiones.]]></item>
 		<item name="filebase.file.authors.error.notFound"><![CDATA[El nombre de usuario “{$errorData[username]}” no existe.]]></item>
 		<item name="filebase.file.edit.assignLabel"><![CDATA[Asignar etiqueta]]></item>
 		<item name="filebase.file.edit.delete"><![CDATA[Eliminar]]></item>
@@ -259,11 +260,11 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 	<category name="filebase.index">
 		<item name="filebase.index.stats"><![CDATA[Estadísticas]]></item>
 		<item name="filebase.index.stats.detail"><![CDATA[<ul class="inlineList dotSeparated">
-<li>{plural value=$stats[authors] 1='1 autor' other='# autores'}</li>
-<li>{plural value=$stats[files] 1='1 archivo' other='# archivos'}</li>
-<li>Tamaño total de archivos {$stats[size]|filesize}</li>
-<li>{plural value=$stats[downloads] 1='1 descarga' other='# descargas'}{if $stats[downloads] > 0} ({plural value=$stats[downloadsPerDay] 1='1 descarga' other='# descargas'} por día){/if}</li>
-<li>{plural value=$stats[comments] 1='1 comentario' other='# comentarios'}</li>
+<li>{plural value=$filebaseStats->authors 1='1 autor' other='# autores'}</li>
+<li>{plural value=$filebaseStats->files 1='1 archivo' other='# archivos'}</li>
+<li>Tamaño total de archivos {$filebaseStats->filesize|filesize}</li>
+<li>{plural value=$filebaseStats->downloads 1='1 descarga' other='# descargas'}{if $filebaseStats->downloads > 0} ({plural value=$filebaseStats->downloadsPerDay 1='1 descarga' other='# descargas'} por día){/if}</li>
+<li>{plural value=$filebaseStats->comments 1='1 comentario' other='# comentarios'}</li>
 </ul>]]></item>
 	</category>
 	<category name="filebase.license">
@@ -497,7 +498,6 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="wcf.user.activityPoint.objectType.com.woltlab.filebase.activityPointEvent.file"><![CDATA[Archivos]]></item>
 		<item name="wcf.user.activityPoint.objectType.com.woltlab.filebase.activityPointEvent.review"><![CDATA[Reseñas de archivos]]></item>
 		<item name="wcf.user.boxList.description.filebaseFiles"><![CDATA[{#$boxUser->filebaseFiles} archivo{if $boxUser->filebaseFiles != 1}s{/if}]]></item>
-		<item name="wcf.user.sortField.filebaseFiles"><![CDATA[Archivos]]></item>
 	</category>
 	<category name="wcf.user.condition">
 		<item name="wcf.user.condition.filebaseFiles"><![CDATA[Archivos]]></item>
@@ -575,186 +575,6 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 	</category>
 </import>
 <delete>
-	<item name="filebase.acp.file.option.delete.confirmMessage"/>
-	<item name="filebase.acp.license.delete.sure"/>
-	<item name="filebase.acp.menu.link.filebase.paymentLog.list"/>
-	<item name="filebase.category.markAllAsRead"/>
-	<item name="filebase.file.bestSellingFiles"/>
-	<item name="filebase.file.button.add"/>
-	<item name="filebase.file.button.jumpToWebsite"/>
-	<item name="filebase.file.button.jumpToWebsite.info"/>
-	<item name="filebase.file.button.purchase"/>
-	<item name="filebase.file.categories"/>
-	<item name="filebase.file.categories.description"/>
-	<item name="filebase.file.categories.error.tooMany"/>
-	<item name="filebase.file.commentCounter"/>
-	<item name="filebase.file.comment.notification.mail"/>
-	<item name="filebase.file.comment.notification.mail.stacked"/>
-	<item name="filebase.file.comment.notification.title"/>
-	<item name="filebase.file.comment.notification.title.stacked"/>
-	<item name="filebase.file.commentResponse.notification.mail"/>
-	<item name="filebase.file.commentResponse.notification.mail.stacked"/>
-	<item name="filebase.file.commentResponse.notification.title"/>
-	<item name="filebase.file.commentResponse.notification.title.stacked"/>
-	<item name="filebase.file.commentResponseOwner.notification.mail"/>
-	<item name="filebase.file.commentResponseOwner.notification.mail.stacked"/>
-	<item name="filebase.file.commentResponseOwner.notification.title"/>
-	<item name="filebase.file.commentResponseOwner.notification.title.stacked"/>
-	<item name="filebase.file.commercial"/>
-	<item name="filebase.file.currency"/>
-	<item name="filebase.file.customersAlsoBought"/>
-	<item name="filebase.file.downloadCounter"/>
-	<item name="filebase.file.fileID.error.invalidCommerical"/>
-	<item name="filebase.file.filePurchases"/>
-	<item name="filebase.file.filterByPrice"/>
-	<item name="filebase.file.filterByPrice.all"/>
-	<item name="filebase.file.filterByPrice.free"/>
-	<item name="filebase.file.filterByPrice.paid"/>
-	<item name="filebase.file.isCommercial"/>
-	<item name="filebase.file.isCommercial.description"/>
-	<item name="filebase.file.isPurchasable"/>
-	<item name="filebase.file.isPurchasable.description"/>
-	<item name="filebase.file.latestDownloadCounter"/>
-	<item name="filebase.file.latestFileDownloads"/>
-	<item name="filebase.file.latestFilePurchases"/>
-	<item name="filebase.file.latestPurchaseCounter"/>
-	<item name="filebase.file.log.file.version.trash.summary"/>
-	<item name="filebase.file.markAsRead.doubleClick"/>
-	<item name="filebase.file.moderation.redirect"/>
-	<item name="filebase.file.noFiles"/>
-	<item name="filebase.file.notPurchasable"/>
-	<item name="filebase.file.price"/>
-	<item name="filebase.file.price.error.invalid"/>
-	<item name="filebase.file.purchase"/>
-	<item name="filebase.file.purchaseCounter"/>
-	<item name="filebase.file.purchased"/>
-	<item name="filebase.file.purchasedFiles"/>
-	<item name="filebase.file.purchaseInfo"/>
-	<item name="filebase.file.purchase.returnMessage"/>
-	<item name="filebase.file.purchases"/>
-	<item name="filebase.file.showUserFiles"/>
-	<item name="filebase.file.topGrossingFiles"/>
-	<item name="filebase.file.totalRevenue"/>
-	<item name="filebase.file.upload.error.upl​oadFailed"/>
-	<item name="filebase.file.version.downloadCounter"/>
-	<item name="filebase.file.version.notification.mail"/>
-	<item name="filebase.file.version.review"/>
-	<item name="filebase.file.version.review.add"/>
-	<item name="filebase.file.version.review.allVersions"/>
-	<item name="filebase.file.version.review.edit"/>
-	<item name="filebase.file.version.review.like.notification.message"/>
-	<item name="filebase.file.version.review.like.notification.message.stacked"/>
-	<item name="filebase.file.version.review.like.notification.title"/>
-	<item name="filebase.file.version.review.like.notification.title.stacked"/>
-	<item name="filebase.file.version.review.moderation.info"/>
-	<item name="filebase.file.version.review.more"/>
-	<item name="filebase.file.version.review.noReview"/>
-	<item name="filebase.file.version.review.noReviewVersion"/>
-	<item name="filebase.file.version.review.notification.mail.html"/>
-	<item name="filebase.file.version.review.notification.mail.plaintext"/>
-	<item name="filebase.file.version.review.notification.message"/>
-	<item name="filebase.file.version.review.notification.title"/>
-	<item name="filebase.file.version.review.rating"/>
-	<item name="filebase.file.version.review.recentActivity.title"/>
-	<item name="filebase.file.version.reviews"/>
-	<item name="filebase.file.version.review.version.notUnique"/>
-	<item name="filebase.file.watchedFiles.noFiles"/>
-	<item name="filebase.header.menu.bestSellingFiles"/>
-	<item name="filebase.header.menu.filebase"/>
-	<item name="filebase.header.menu.mostDownloadedFiles"/>
-	<item name="filebase.header.menu.myFiles"/>
-	<item name="filebase.header.menu.purchasedFiles"/>
-	<item name="filebase.header.menu.topFiles"/>
-	<item name="filebase.header.menu.unreadFiles"/>
-	<item name="filebase.header.menu.watchedFiles"/>
-	<item name="filebase.index.copyright"/>
-	<item name="filebase.index.evaluation"/>
-	<item name="filebase.review.delete.confirmMessage"/>
-	<item name="filebase.review.ipAddress"/>
-	<item name="filebase.review.ipAddress.author"/>
-	<item name="filebase.review.ipAddress.hostname"/>
-	<item name="filebase.review.ipAddress.otherUsers"/>
-	<item name="filebase.review.ipAddress.review"/>
-	<item name="filebase.review.ipAddress.title"/>
-	<item name="filebase.search.categories"/>
-	<item name="filebase.user.condition.filebaseCustomerFileID"/>
-	<item name="filebase.user.condition.filebaseCustomerFileID.description"/>
-	<item name="filebase.user.usersOnline.location.FileAddForm"/>
-	<item name="filebase.user.usersOnline.location.FilebasePage"/>
-	<item name="filebase.user.usersOnline.location.FileEditForm"/>
-	<item name="filebase.user.usersOnline.location.FileListPage.categorizedFiles"/>
-	<item name="filebase.user.usersOnline.location.FileListPage.userFiles"/>
-	<item name="filebase.user.usersOnline.location.FilePage"/>
-	<item name="filebase.user.usersOnline.location.VersionAddForm"/>
-	<item name="filebase.user.usersOnline.location.VersionEditForm"/>
-	<item name="wcf.acp.group.option.user.filebase.allowedAttachmentExtensions.description"/>
-	<item name="wcf.acp.group.option.user.filebase.allowedFileExtensions.description"/>
-	<item name="wcf.acp.group.option.user.filebase.canSellFile"/>
-	<item name="wcf.acp.group.option.user.filebase.canUploadScreenshot"/>
-	<item name="wcf.acp.group.option.user.filebase.canViewScreenshot"/>
-	<item name="wcf.acp.group.option.user.filebase.maxAttachmentCount.description"/>
-	<item name="wcf.acp.index.system.software.filebaseVersion"/>
-	<item name="wcf.acp.option.category.filebase.file"/>
-	<item name="wcf.acp.option.category.filebase.selling"/>
-	<item name="wcf.acp.option.filebase_available_currencies"/>
-	<item name="wcf.acp.option.filebase_available_currencies.desciption"/>
-	<item name="wcf.acp.option.filebase_available_currencies.description"/>
-	<item name="wcf.acp.option.filebase_enable_selling"/>
-	<item name="wcf.acp.option.filebase_enable_selling.description"/>
-	<item name="wcf.acp.option.filebase_enable_time_limited_file_stats"/>
-	<item name="wcf.acp.option.filebase_enable_time_limited_file_stats.description"/>
-	<item name="wcf.acp.option.filebase_file_max_categories"/>
-	<item name="wcf.acp.option.filebase_file_max_categories.description"/>
-	<item name="wcf.acp.option.filebase_files_enable_language_flag"/>
-	<item name="wcf.acp.option.filebase_files_enable_language_flag.description"/>
-	<item name="wcf.acp.option.filebase_index_enable_online_list"/>
-	<item name="wcf.acp.option.filebase_max_price"/>
-	<item name="wcf.acp.option.filebase_min_price"/>
-	<item name="wcf.acp.option.filebase_multiple_purchase"/>
-	<item name="wcf.acp.option.filebase_price_tax"/>
-	<item name="wcf.acp.option.filebase_price_tax.description"/>
-	<item name="wcf.acp.option.filebase_time_limited_file_stats_period"/>
-	<item name="wcf.acp.option.filebase_time_limited_file_stats_period.description"/>
-	<item name="wcf.acp.option.filebase_user_profile_enable_user_files"/>
-	<item name="wcf.acp.rebuildData.com.woltlab.filebase.file"/>
-	<item name="wcf.acp.rebuildData.com.woltlab.filebase.file.description"/>
-	<item name="wcf.acp.rebuildData.com.woltlab.filebase.review"/>
-	<item name="wcf.acp.rebuildData.com.woltlab.filebase.review.description"/>
-	<item name="wcf.acp.rebuildData.com.woltlab.filebase.version"/>
-	<item name="wcf.acp.rebuildData.com.woltlab.filebase.version.description"/>
-	<item name="wcf.dashboard.box.com.woltlab.filebase.bestSellingFiles"/>
-	<item name="wcf.dashboard.box.com.woltlab.filebase.latestComments"/>
-	<item name="wcf.dashboard.box.com.woltlab.filebase.latestUpdates"/>
-	<item name="wcf.dashboard.box.com.woltlab.filebase.mostActiveAuthors"/>
-	<item name="wcf.dashboard.box.com.woltlab.filebase.mostDownloaded"/>
-	<item name="wcf.dashboard.box.com.woltlab.filebase.newestFiles"/>
-	<item name="wcf.dashboard.box.com.woltlab.filebase.tagCloud"/>
-	<item name="wcf.dashboard.box.com.woltlab.filebase.topFiles"/>
-	<item name="wcf.dashboard.box.com.woltlab.filebase.topGrossingFiles"/>
-	<item name="wcf.dashboard.objectType.com.woltlab.filebase.FilebasePage"/>
-	<item name="wcf.dashboard.objectType.com.woltlab.filebase.FileListPage"/>
-	<item name="wcf.page.category.com.woltlab.filebase"/>
-	<item name="wcf.page.com.woltlab.filebase.BestSellingFileListPage"/>
-	<item name="wcf.page.com.woltlab.filebase.FileAddForm"/>
-	<item name="wcf.page.com.woltlab.filebase.FilebasePage"/>
-	<item name="wcf.page.com.woltlab.filebase.FileEditForm"/>
-	<item name="wcf.page.com.woltlab.filebase.FileListPage"/>
-	<item name="wcf.page.com.woltlab.filebase.FileLogPage"/>
-	<item name="wcf.page.com.woltlab.filebase.FilePage"/>
-	<item name="wcf.page.com.woltlab.filebase.LicenseForm"/>
-	<item name="wcf.page.com.woltlab.filebase.UnreadFileListPage"/>
-	<item name="wcf.page.com.woltlab.filebase.VersionAddForm"/>
-	<item name="wcf.page.com.woltlab.filebase.VersionEditForm"/>
-	<item name="wcf.page.com.woltlab.filebase.WatchedFileListPage"/>
-	<item name="wcf.page.sitemap.filebase"/>
-	<item name="wcf.user.condition.filebaseFiles.greaterThan"/>
-	<item name="wcf.user.condition.filebaseFiles.greaterThan.error.lessThan"/>
-	<item name="wcf.user.condition.filebaseFiles.lessThan"/>
-	<item name="wcf.user.objectWatch.enableNotification.com.woltlab.filebase.category"/>
-	<item name="wcf.user.objectWatch.enableNotification.com.woltlab.filebase.file"/>
-	<item name="wcf.user.objectWatch.subscribe.com.woltlab.filebase.category"/>
-	<item name="wcf.user.objectWatch.subscribe.com.woltlab.filebase.file"/>
-	<item name="wcf.user.objectWatch.unsubscribe.com.woltlab.filebase.category"/>
-	<item name="wcf.user.objectWatch.unsubscribe.com.woltlab.filebase.file"/>
+	<item name="wcf.user.sortField.filebaseFiles"/>
 </delete>
 </language>
