@@ -505,20 +505,20 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 	</category>
 	<category name="wcf.user.notification">
 		<item name="wcf.user.notification.com.woltlab.filebase"><![CDATA[Base de archivos]]></item>
-		<item name="wcf.user.notification.com.woltlab.filebase.file.file"><![CDATA[Notificarme nuevos archivos en categorías suscritas]]></item>
-		<item name="wcf.user.notification.com.woltlab.filebase.version.version"><![CDATA[Notificarme nuevas versiones de archivos suscritos]]></item>
-		<item name="wcf.user.notification.com.woltlab.filebase.fileComment.notification.comment"><![CDATA[Notificarme nuevos comentarios sobre mis archivos]]></item>
-		<item name="wcf.user.notification.com.woltlab.filebase.fileComment.response.notification.commentResponse"><![CDATA[Notificarme nuevas respuestas a mis comentarios]]></item>
-		<item name="wcf.user.notification.com.woltlab.filebase.fileComment.response.notification.commentResponseOwner"><![CDATA[Notificarme nuevas respuestas a comentarios sobre mis archivos]]></item>
-		<item name="wcf.user.notification.com.woltlab.filebase.likeableFile.notification.like"><![CDATA[Notificarme cuando alguien reaccione a mis archivos]]></item>
-		<item name="wcf.user.notification.com.woltlab.filebase.likeableFileVersion.notification.like"><![CDATA[Notificarme cuando alguien reaccione a versiones de mis archivos]]></item>
-		<item name="wcf.user.notification.com.woltlab.filebase.fileComment.like.notification.like"><![CDATA[Notificarme cuando alguien reaccione a mis comentarios]]></item>
-		<item name="wcf.user.notification.com.woltlab.filebase.fileComment.response.like.notification.like"><![CDATA[Notificarme cuando alguien reaccione a mis respuestas a comentarios]]></item>
-		<item name="wcf.user.notification.com.woltlab.filebase.review.review"><![CDATA[Notificarme nuevas reseñas en mis archivos]]></item>
-		<item name="wcf.user.notification.com.woltlab.filebase.likeableFileReview.notification.like"><![CDATA[Notificarme cuando alguien reaccione a mis reseñas]]></item>
-		<item name="wcf.user.notification.com.woltlab.filebase.review.response.response"><![CDATA[Notificarme nuevas respuestas a mis reseñas]]></item>
-		<item name="wcf.user.notification.com.woltlab.filebase.moderation.file.moderation"><![CDATA[Notificarme cuando mi archivo sea moderado]]></item>
-		<item name="wcf.user.notification.com.woltlab.filebase.moderation.version.moderation"><![CDATA[Notificarme cuando una versión de mis archivos sea moderada]]></item>
+		<item name="wcf.user.notification.com.woltlab.filebase.file.file"><![CDATA[Nuevo archivo en categoría suscrita]]></item>
+		<item name="wcf.user.notification.com.woltlab.filebase.version.version"><![CDATA[Nueva versión de un archivo suscrito]]></item>
+		<item name="wcf.user.notification.com.woltlab.filebase.fileComment.notification.comment"><![CDATA[Nuevo comentario en tu archivo]]></item>
+		<item name="wcf.user.notification.com.woltlab.filebase.fileComment.response.notification.commentResponse"><![CDATA[Nueva respuesta a tu comentario]]></item>
+		<item name="wcf.user.notification.com.woltlab.filebase.fileComment.response.notification.commentResponseOwner"><![CDATA[Nueva respuesta a un comentario en tu archivo]]></item>
+		<item name="wcf.user.notification.com.woltlab.filebase.likeableFile.notification.like"><![CDATA[Reacción a tu archivo]]></item>
+		<item name="wcf.user.notification.com.woltlab.filebase.likeableFileVersion.notification.like"><![CDATA[Reacción a una versión de tu archivo]]></item>
+		<item name="wcf.user.notification.com.woltlab.filebase.fileComment.like.notification.like"><![CDATA[Reacción a tu comentario]]></item>
+		<item name="wcf.user.notification.com.woltlab.filebase.fileComment.response.like.notification.like"><![CDATA[Reacción a tu respuesta a un comentario]]></item>
+		<item name="wcf.user.notification.com.woltlab.filebase.review.review"><![CDATA[Nueva reseña de tu archivo]]></item>
+		<item name="wcf.user.notification.com.woltlab.filebase.likeableFileReview.notification.like"><![CDATA[Reacción a tu reseña]]></item>
+		<item name="wcf.user.notification.com.woltlab.filebase.review.response.response"><![CDATA[Nueva respuesta a tu reseña]]></item>
+		<item name="wcf.user.notification.com.woltlab.filebase.moderation.file.moderation"><![CDATA[Tu archivo ha sido moderado]]></item>
+		<item name="wcf.user.notification.com.woltlab.filebase.moderation.version.moderation"><![CDATA[Una versión de tu archivo ha sido moderada]]></item>
 	</category>
 	<category name="wcf.user.recentActivity">
 		<item name="wcf.user.recentActivity.com.woltlab.filebase.fileComment.response.recentActivityEvent"><![CDATA[Respuesta (Archivo)]]></item>
