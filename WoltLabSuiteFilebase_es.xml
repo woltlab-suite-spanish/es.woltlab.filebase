@@ -505,7 +505,7 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 	</category>
 	<category name="wcf.user.notification">
 		<item name="wcf.user.notification.com.woltlab.filebase"><![CDATA[Base de archivos]]></item>
-		<item name="wcf.user.notification.com.woltlab.filebase.file.file"><![CDATA[Nuevo archivo en categoría suscrita]]></item>
+		<item name="wcf.user.notification.com.woltlab.filebase.file.file"><![CDATA[Nuevo archivo en una categoría suscrita]]></item>
 		<item name="wcf.user.notification.com.woltlab.filebase.version.version"><![CDATA[Nueva versión de un archivo suscrito]]></item>
 		<item name="wcf.user.notification.com.woltlab.filebase.fileComment.notification.comment"><![CDATA[Nuevo comentario en tu archivo]]></item>
 		<item name="wcf.user.notification.com.woltlab.filebase.fileComment.response.notification.commentResponse"><![CDATA[Nueva respuesta a tu comentario]]></item>
