@@ -36,7 +36,7 @@
 		<item name="filebase.acp.file.paymentLog.logMessage"><![CDATA[Acción]]></item>
 		<item name="filebase.acp.file.paymentLog"><![CDATA[Transacción]]></item>
 		<item name="filebase.acp.file.paymentLog.transactionDetails"><![CDATA[Detalles]]></item>
-		<item name="filebase.acp.file.option.categoryIDs.description"><![CDATA[El campo de opción solo está disponible para los ficheros de las categorías seleccionadas. Si no se selecciona ninguna categoría, el campo de opción está disponible en todas las categorías.]]></item>
+		<item name="filebase.acp.file.option.categoryIDs.description"><![CDATA[El campo de opción solo está disponible para los archivos de las categorías seleccionadas. Si no se selecciona ninguna categoría, el campo de opción está disponible en todas las categorías.]]></item>
 		<item name="filebase.acp.file.option.isMultilingual"><![CDATA[Activar multilingüismo]]></item>
 	</category>
 	<category name="filebase.acp.license">
