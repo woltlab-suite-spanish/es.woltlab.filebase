@@ -243,7 +243,7 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 	<category name="filebase.file.log">
 		<item name="filebase.file.log"><![CDATA[Registro]]></item>
 		<item name="filebase.file.log.noEntries"><![CDATA[No hay entradas de registro para este archivo.]]></item>
-		<item name="filebase.file.log.file.trash.summary"><![CDATA[El archivo fue eliminado por {$username}{if $additionalData[reason]} por el siguiente motivo: {$additionalData[reason]}{/if}. ({@$time|time}).]]></item>
+		<item name="filebase.file.log.file.trash.summary"><![CDATA[Archivo eliminado por {$username}{if $additionalData[reason]} por el siguiente motivo: {$additionalData[reason]}{/if}. ({@$time|time}).]]></item>
 		<item name="filebase.file.log.file.version.delete"><![CDATA[Ha eliminado una versión.]]></item>
 		<item name="filebase.file.log.file.version.disable"><![CDATA[Ha desactivado la versión{if $version->versionNumber} {$version->versionNumber}{/if}.]]></item>
 		<item name="filebase.file.log.file.version.enable"><![CDATA[Ha aprobado la versión{if $version->versionNumber} {$version->versionNumber}{/if}.]]></item>
