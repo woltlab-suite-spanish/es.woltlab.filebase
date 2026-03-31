@@ -391,7 +391,7 @@ Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></ite
 		<item name="wcf.acp.option.category.filebase.stats"><![CDATA[Estadísticas]]></item>
 		<item name="wcf.acp.option.filebase_index_enable_stats"><![CDATA[Mostrar estadísticas de la base de archivos]]></item>
 		<item name="wcf.acp.option.filebase_files_per_page"><![CDATA[Archivos por página]]></item>
-		<item name="wcf.acp.option.filebase_max_teaser_length"><![CDATA[Longitud máxima del teaser]]></item>
+		<item name="wcf.acp.option.filebase_max_teaser_length"><![CDATA[Longitud máxima del extracto]]></item>
 		<item name="wcf.acp.option.filebase_storage"><![CDATA[Ubicación de archivos en el disco (obsoleto / no recomendado)]]></item>
 		<item name="wcf.acp.option.filebase_storage.description"><![CDATA[La compatibilidad con una ubicación de disco de archivo personalizada está obsoleta y se eliminará en una versión futura de WoltLab Suite™.]]></item>
 		<item name="wcf.acp.option.filebase_dashboard_box_files"><![CDATA[Número de archivos]]></item>
