@@ -108,7 +108,7 @@
 Extensiones de archivo permitidas: {', '|implode:$allowedFileExtensions}]]></item>
 		<item name="filebase.file.versionNumber"><![CDATA[Número de versión]]></item>
 		<item name="filebase.file.versionNumber.error.notUnique"><![CDATA[Este número de versión ya está en uso.]]></item>
-		<item name="filebase.file.teaser"><![CDATA[Teaser]]></item>
+		<item name="filebase.file.teaser"><![CDATA[Extracto]]></item>
 		<item name="filebase.file.teaser.description"><![CDATA[Introduce una breve descripción de tu archivo, no debe superar los {#FILEBASE_MAX_TEASER_LENGTH} caracteres.]]></item>
 		<item name="filebase.file.website.description"><![CDATA[Opcional: Sitio web (URL) con más detalles sobre este archivo.]]></item>
 		<item name="filebase.file.message"><![CDATA[Descripción]]></item>
